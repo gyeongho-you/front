@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test1 table{
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        .test1 caption{
+            caption-side: bottom;
+            text-align: right;
+        }
+        .test1 th, .test1 td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .test1 th{
+            text-align: left;
+        }
+        .col1{
+            background-color: #e5f6f6;
+        }
+
+        .div2 img{
+            margin: 0;
+        }
+        .div2{
+            width: 500px;
+        }
+        .div2 h2{
+            color: #ff0000;
+            font-size: 1.5em;
+            text-align: center;
+        }
+        .div2 p{
+            font-size: 1.2em;
+            line-height: 2em;
+            font-weight: bold;
+            text-align: center;
+        }
+        .blue{
+            color: #0000ff;
+        }
+        .p2{
+            background-color: black;
+            color: white;
+            text-align: left !important;
+            margin-top: 0;
+        }
+        .smalltext{
+            font-size: 0.7em;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. 텍스트의 굵기를 조절하는 CSS 속성은 ( 2.font-weight )입니다.
+
+    2. 표의 경계선을 설정하는 CSS 속성은 ( 1.border ) 입니다.
+
+    3. 목록에서 항목 앞에 나타나는 기호 스타일을 지정하는 속성은 ( 1.list-style ) 입니다.
+
+    4. 웹 폰트를 CSS에 포함하기 위해 사용하는 구문은 무엇인가요?
+    답 - 1. @import
+
+    5. 글자 간격을 설정하는 CSS 속성은 무엇인가요?
+    답 - 2. letter-spacing
+
+    6. 텍스트를 가운데 정렬하려면 CSS에서 '( text-align ):center'을 사용합니다.
+
+    7. 모든 <div> 요소에 글꼴 크기를 16px, 글꼴 스타일을 이탤릭체로 설정하는 CSS 코드를 작성하세요.
+    답 -
+    div{
+        font-size : 16px;
+        font-style : italic;
+    }
+    
+    8. 스타일을 적용하세요.
+    -->
+    <div class = "test1">
+        <table>
+            <caption>출처 : 통계청 100대 지표</caption>
+            <colgroup>
+                <col>
+                <col>
+                <col>
+                <col>
+                <col class = "col1">
+            </colgroup>
+            <tr>
+                <th>지수</th>
+                <th>2019년</th>
+                <th>2020년</th>
+                <th>2021년</th>
+                <th>2022년</th>
+            </tr>
+            <tr>
+                <th>가구 수</th>
+                <td>20,891,348</td>
+                <td>21,484,785</td>
+                <td>22,022,753</td>
+                <td>22,383,187</td>
+            </tr>
+            <tr>
+                <th>1인 가구 수</th>
+                <td>6,147,516</td>
+                <td>6,643,354</td>
+                <td>7,165,788</td>
+                <td>7,502,350</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <hr>
+
+    <div class = "div2">
+        <img src = "apple.PNG" width="500">
+        <p class = "p2">확인하세요</p>
+
+        <h2>주문 및 배송</h2>
+        <p><span class = "blue">오후 2시 이전</span> 주문건은 당일 발송합니다.</p>
+        <p>2시 이후 주문건은 다음날 발송합니다.(주말 제외)</p>
+
+        <hr>
+
+        <h2>교환 및 환불</h2>
+        <p>불만족시 <span class = "blue">100% 환불</span>해드립니다.</p>
+        <p>고객센터로 전화주세요</p>
+
+        <hr>
+
+        <h2>고객센터</h2>
+        <p>0000-0000</p>
+        <p class = "smalltext">상담시간 : 오전 9시 ~ 오후 6시 (토/일, 공휴일 휴무)</p>
+    </div>
+
+</body>
+</html>

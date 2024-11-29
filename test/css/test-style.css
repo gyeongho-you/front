@@ -1,0 +1,11 @@
+.text{
+    font-style : oblique;
+}
+#test-id{
+    border : solid black 1px;
+    width: 500px;
+    padding: 10px;
+}
+#test-id2{
+    text-align: center;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .bord{
+            width: 500px;
+            border: solid RGB(213,213,213) 1px;
+        }
+
+        #bord1{
+            font-size: 20px;
+        }
+        #b1h1{
+            font-size: 40px;
+        }
+
+        #b2s1{
+            font-size: large;
+            font-weight: bold;
+        }
+        #b2p1{
+            font-weight: bold;
+            font-style : oblique;
+        }
+    </style>
+</head>
+<body>
+    <div id="bord1" class="bord">
+        <h1 id = "b1h1">레드향</h1>
+        <p>껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+        <p>일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    </div>
+    
+    <hr>
+
+    <div class="bord">
+        <h1>레드향</h1>
+        <p>껍질에 붉은 빛이 돌아 <span id="b2s1">레드향</span>이라 불린다.</p>
+        <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+        <p id = "b2p1">일반 귤보다 2~3배 크고, 과육이 붉고 통통하다.</p>
+    </div>
+</body>
+</html>

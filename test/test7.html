@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멀티미디어 파일 삽입하기</title>
+</head>
+<body>
+    <h1>웹 문서에 PDF 파일 삽입하기</h1>
+    <object 
+        data = "product.pdf"
+        width="900"
+        height="800"
+    ></object>
+
+    <hr>
+
+    <h1>멀티미디어 파일 삽입하기</h1>
+    <embed
+        src = "spring.mp3"
+        controls
+    ></embed>
+
+    <hr>
+
+    <h1>웹 문서에 오디오 파일 삽입하기</h1>
+    <audio
+        src = "spring.mp3"
+        controls
+    ></audio>
+
+    <hr>
+
+    <h1>웹 문서에 비디오 파일 삽입하기</h1>
+    <video
+        src="salad.mp4"
+        width="700"
+        controls
+    ></video>
+
+    <hr>
+
+    <h1>웹 문서에 오디오 파일 삽입하기 - 자동</h1>
+    <audio
+        src = "spring.mp3"
+        loop
+        controls
+    ></audio>
+
+    <hr>
+
+    <h1>웹 문서에 비디오 파일 삽입하기 - 썸네일</h1>
+    <video
+        src="salad.mp4"
+        poster="salad.jpg"
+        controls
+    ></video>
+
+    <hr>
+
+    <h1>웹 문서에 비디오 파일 삽입하기 - 가로 700, 자동, 음소거, 반복</h1>
+    <video
+        src="salad.mp4"
+        poster="salad.jpg"
+        width="700"
+        autoplay
+        muted
+        loop
+        controls
+    ></video>
+
+</body>
+</html>

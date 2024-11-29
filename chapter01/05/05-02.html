@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>기본 사이즈</p>
+        <input type = "text">
+        <p>사이즈:30</p>
+        <input type = "text" size="30">
+        <p>속성</p>
+        <input type = "text" value="글쓴이">
+        <p>maxlength  속성</p>
+        <input type = "text" maxlength="3">
+    </form>
+
+    <form>
+        <input type = "search">
+        <input type = "url">
+        <input type = "email">
+        <input type = "tel">
+        <input type = "submit">
+    </form>
+
+    <form>
+        <p>가입 경로</p>
+        <input type="radio" name ="path" value = "1"> 검색
+        <input type="radio" name ="path"> 광고
+        <input type="radio" name ="path"> 기타
+
+        <p>보유 스킬</p>
+        <input type ="checkbox" name = "skills" value = "java">java
+        <input type ="checkbox" name = "skills">javascript
+        <input type ="checkbox" name = "skills">database
+        <input type ="checkbox" name = "skills">html
+    </form>
+
+    <form>
+        <input type="number" min="3" step="2" value="4">
+        <input type="range"
+            oninput="document.querySelector('#selected').textContent = this.value">
+        <input type="submit">
+    </form>
+    <h1 id = "selected">50</h1>
+
+    <input type = "date">
+    <input type = "month">
+    <input type = "week">
+    <input type = "time">
+    <input type = "datetime-local">
+    <input type = "date" min = "2024-12-02" max = "2024-12-06">
+
+    <form action = "receive.html" method = "post">
+        <input type = "text">
+        <input type = "text">
+        <input type = "submit" value="확인">
+        <input type = "reset" value = "초기화">
+    </form>
+
+    <form>
+        <input type = "image" src ="images/search.png" alt = "검색" width = "100">   
+    </form>
+
+    <form>
+        <input type = "text" id = "t1">
+        <input type = "button" value = "버튼" id = "b1">
+        <h1 id ="h101"></h1>
+    </form>
+    <script>
+        const t1 = document.querySelector("#t1"); 
+        const b1 = document.querySelector("#b1");
+        const h101 = document.querySelector("#h101");
+        b1.addEventListener("click",()=>{
+            let str = t1.value
+            h101.textContent = str;
+        });
+    </script>
+    <form>
+        <input type = "button" value ="창 열기" 
+            onclick = "window.open('small.html','_black','width = 300, height = 400')">
+    </form>
+    <input type = "file">
+    <form method = "get">
+        <input type = "hidden" name = "articleId" value ="42">
+        <input type = "text" name = "arcicleBody">
+        <input type = "submit" value = "수정">
+    </form>
+</body>
+</html>
