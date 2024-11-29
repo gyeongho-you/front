@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        a {
+            text-decoration: none;
+            color: #222;
+        }
+        #travel {
+            width: 1200px;
+            margin: 0 auto;
+        }
+        .title-text {
+            text-align: center;
+        }
+        .title-text > h2 {
+            font-size: 2.5em;
+            color: #919191;
+        }
+        .title-text > p {
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        .travel-list {
+            padding-top: 20px;      
+        }    
+        .travel-card img {
+            width: 150px;
+            height: 150px;
+            margin: 15px;
+        }
+        .travel-card p {
+            font-size: 16px;
+        }
+        .travel-card{
+            width: 250px;
+            height: 340px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 20px;
+            float: left;
+            margin-right: 20px;
+            text-align: center;
+        }
+        img{
+            border-radius: 50%;
+        }
+        #img1{
+            border: 1px solid gray;
+            border-radius: 50%;
+            box-shadow: 5px 5px 30px 2px #000;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    1. 박스 모델에서 요소 간의 여백을 나타내는 속성은 ( 1.margin ) 입니다.
+
+    2. position 속성 중 요소를 문서의 흐름에서 완전히 제거하고, 페이지의 상대적 위치에 따라 배치되게 하는 값은 ( 1.relative ) 입니다.
+
+    3. CSS의 ( 2.padding ) 속성은 테두리와 콘텐츠 사이의 여백을 생성합니다.
+
+    4. position 속성이 relative로 설정되어 있을 때, top : 10px를 적용하면 어떻게 되는가?
+    답 - 2.원래 위치에서 10px 아래로 이동한다.
+
+    5. CSS 박스 모델에서 요소의 실제 너비를 계산할 때 포함되지 않는 속성은?
+    답 - 1. 마진(margin)
+
+    6. .example 요소를 원래 위치에서 상대적으로 오른쪽으로 20px 이동해서 배치하려고 합니다. CSS 코드를 작성하세요
+    답 -
+    .example{
+        position: relative;
+        left : 20px;
+    }
+
+    7. CSS만 사용해서 다음 완성 화면과 같이 이미지를 표시하려 합니다. <힌트>를 참고해 완성하세요.
+    -->
+    <img src="bear.jpg" id = "img1">
+
+    <hr>
+
+    <!-- 
+    8. 이미지와 제목, 내용으로 구성된 4개의 카드가 있습니다. 완성 화면과 힌트를 참고해 카드를 꾸며 보세요. 글자색과 글자 크기. 이미지 크기 등 CSS코드는 미리 작성되어 있습니다.
+    -->
+    <div id="travel">
+        <div class="title-text">
+          <h2>여가 시간 즐기기</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, in! Lorem ipsum dolor sit amet.</p>
+        </div>
+        <div class="travel-list">
+          <div class="travel-card">
+            <a href="#">
+              <img src="tr-1.png">
+              <h3>도심 투어</h3>
+              <p>Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+            </a>
+          </div>
+          <div class="travel-card">
+            <a href="#">
+              <img src="tr-2.png">
+              <h3>바다 즐기기</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </a>
+          </div>
+          <div class="travel-card">
+            <a href="#">
+              <img src="tr-3.png">
+              <h3>등산 도전하기</h3>
+              <p>Lorem ipsum dolor sit amet. Lorem, ipsum dolor.</p>
+            </a>
+          </div>
+          <div class="travel-card">
+            <a href="#">
+              <img src="tr-4.png">
+              <h3>관광지 투어</h3>
+              <p>Lorem, ipsum dolor. Lorem ipsum dolor sit amet.</p>
+            </a>
+          </div>    
+        </div>
+      </div>
+</body>
+</html>
