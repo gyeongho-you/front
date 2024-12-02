@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit 속성</title>
+    <style>
+        div{
+            float : left;
+            margin: 0px 30px;
+            width: 250px;
+            height: 500px;
+            border: 1px solid black;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+        }
+        .fill{
+            object-fit: fill;
+        }
+        .contain{
+            object-fit: contain;
+        }
+        .cover{
+            object-fit: cover;
+        }
+        .none{
+            object-fit: none;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img class = "fill"
+            src = "cat.png">
+        <p><b>object-fit : fill</b></p>
+    </div>
+    <div>
+        <img class = "contain"
+            src = "cat.png">
+        <p><b>object-fit : contain</b></p>
+    </div>
+    <div>
+        <img class = "cover"
+            src = "cat.png">
+        <p><b>object-fit : cover</b></p>
+    </div>
+    <div>
+        <img class = "none"
+            src = "cat.png">
+        <p><b>object-fit : none</b></p>
+    </div>
+</body>
+</html>
