@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선형 그라데이션</title>
+    <style>
+        #box1{
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            background : linear-gradient(to bottom right, blue, white)
+        }
+        #box2{
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            background : linear-gradient(45deg, red, white)
+        }
+        #box3{
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            background : linear-gradient(180deg, blue, white 30%, blue)
+        }
+        #box4{
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            box-shadow: 10px 10px 20px gray;
+            background : radial-gradient(circle farthest-corner at 20% 30%, white, blue)
+        }
+        
+    </style>    
+</head>
+<body>
+    <div id = "box1"></div>
+    <hr>
+    
+    <div id = "box2"></div>
+    <hr>
+
+    <div id = "box3"></div>
+    <hr>
+
+    <div id = "box4"></div>
+    <hr>
+</body>
+</html>

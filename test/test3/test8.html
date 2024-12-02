@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>불릿 바꾸기</title>
+    <style>
+        .book{
+            background-image: url("book-icon.png");
+            background-position: left;
+            background-repeat: no-repeat;
+        }
+        .book p{
+            position: relative;
+            left: 50px
+        }
+
+        .contain1{
+            background: url("bg2.png") right top no-repeat fixed;
+        }
+        .box1{
+            width: 400px;
+            border: 20px solid rgb(213,213,213, 0.5);
+            padding: 20px;
+            margin: 20px;
+            background: url("bg3.png") right top no-repeat;
+        }
+        #box1-1{
+            background-origin: padding-box;
+        }
+        #box1-2{
+            background-origin: border-box;
+        }
+        #box1-3{
+            background-origin: content-box;
+        }
+
+        .contain2{
+            width: 950px;
+            margin: 0 auto;
+        }
+        .box2{
+            float: left;
+            width: 250px;
+            height: 250px;
+            margin: 25px;
+            border: 1px solid black;
+            background: url("bg4.jpg") no-repeat;
+        }
+        #box2-1{
+            background-size: auto;
+        }
+        #box2-2{
+            background-size: 200px;
+        }
+        #box2-3{
+            background-size: 50%;
+        }
+        #box2-4{
+            background-size: 100% 100%;
+        }
+        #box2-5{
+            background-size: contain;
+        }
+        #box2-6{
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <h1>이지스퍼블링</h1>
+
+    <div class = "book">
+        <p>회사소개</p>
+    </div>
+    <div class = "book">
+        <p>도서</p>
+    </div>
+    <div class = "book">
+        <p>자료실</p>
+    </div>
+    <div class = "book">
+        <p>질문답변</p>
+    </div>
+    <div class = "book">
+        <p>동영상강의</p>
+    </div>
+
+
+    <hr>
+
+    <div class = "contain1">
+        <div class = "box1" id = "box1-1">
+            <h2> 바빠 시리즈 </h2>
+            <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+            <p>쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하느 효율적인 학습 설계가 되어 있는 바빠 연산법과 '손이 기억하는 훈련 프로그램'인 바빠 영어 시리즈가 있습니다.</p>
+        </div>
+        <div class = "box1" id = "box1-2">
+            <h2> 바빠 시리즈 </h2>
+            <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+            <p>쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하느 효율적인 학습 설계가 되어 있는 바빠 연산법과 '손이 기억하는 훈련 프로그램'인 바빠 영어 시리즈가 있습니다.</p>
+        </div>
+        <div class = "box1" id = "box1-3">
+            <h2> 바빠 시리즈 </h2>
+            <h3>-바쁜 학생을 위한 빠른 학습법</h3>
+            <p>쉬운 내용은 압축하여 빠르게, 어려운 내용은 더 많이 공부하느 효율적인 학습 설계가 되어 있는 바빠 연산법과 '손이 기억하는 훈련 프로그램'인 바빠 영어 시리즈가 있습니다.</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class = "contain2">
+        <div class = "box2" id = "box2-1"></div>
+        <div class = "box2" id = "box2-2"></div>
+        <div class = "box2" id = "box2-3"></div>
+        <div class = "box2" id = "box2-4"></div>
+        <div class = "box2" id = "box2-5"></div>
+        <div class = "box2" id = "box2-6"></div>
+    </div>
+</body>
+</html>
