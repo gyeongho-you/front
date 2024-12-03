@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d1 p{
+            color :aqua;
+        }
+        .d1 > p{
+            color :red;
+        }
+        p + div {
+            border: 1px dotted black;
+        }
+        .d1 p ~ p{
+            color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem Ipsum</p>
+    <div class = "d1">
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <p>Lorem Ipsum</p>
+        <div>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+            <p>Lorem Ipsum</p>
+        </div>
+    </div>
+</body>
+</html>

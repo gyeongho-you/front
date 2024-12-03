@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //DOMContentLoaded 이벤트
+        document.addEventListener("DOMContentLoaded",() =>{
+            const h102 = document.querySelector(".h102");
+            h102.textContent = "방가"
+        })
+    </script>
+</head>
+<body>
+    <h1 class = "h101"></h1>
+    <h1 class = "h102"></h1>
+    <h1 class = "h103"></h1>
+    
+    <h1 class = "h104"></h1>
+    <h1 class = "h104"></h1>
+    <h1 class = "h104"></h1>
+    <h1 class = "h104"></h1>
+    <script>
+        const h104s = document.querySelectorAll(".h104");
+        console.log(h104s);
+        h104s.forEach(v => {
+            v.textContent = "104"
+            v.style.color="red"
+            v.style.backgroundColor = "blue"
+            v.style.padding="10px"
+        })
+
+        const h103=document.querySelector(".h103");
+        h103.textContent = "Head Title";
+        h103.style.color="red"
+        h103.style.backgroundColor = "blue"
+        h103.style.padding="10px"
+
+        const h101 = document.querySelector(".h101");
+        h101.textContent = "안녕"
+
+    </script>
+</body>
+</html>

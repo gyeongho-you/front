@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1"></div>
+    <div id="d2"></div>
+
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+    <img class="rect">
+
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+    <div class="divs"></div>
+
+    <h1 id = "h-style">스타일 조작하기</h1>
+
+    <script>
+        const divs = document.querySelectorAll(".divs");
+        divs.forEach((div,index) =>{
+            const val = index*10;
+            div.style.height = "10px";
+            div.style.backgroundColor = `rgb(${255 - val},${255 - val},${255 - val})`;
+        })
+
+
+
+        const hStyle = document.querySelector("#h-style");
+        hStyle.style.backgroundColor = "yellow";
+        hStyle.style["background-color"] = "red";
+        hStyle.style["backgroundColor"] = "blue";
+
+        const imgs = document.querySelectorAll(".rect");
+        imgs.forEach((v,index) => {
+            const width = (index+1)*100;
+            const src = `https://placehold.co/${width}x400`;
+            v.setAttribute("src",src);
+        })
+        console.log(imgs[0].getAttribute("src"));
+        console.log(imgs[0].getAttribute("class"));
+
+
+        const d1 = document.querySelector("#d1");
+        const d2 = document.querySelector("#d2");
+
+        d1.textContent = "<h1>헬로우</h1>"
+        d2.innerHTML = "<h1>헬로우</h1>"
+    </script>
+</body>
+</html>

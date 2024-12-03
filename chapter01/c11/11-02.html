@@ -5,10 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        
+        .container{
+            width : 800px;
+            display : flex;
+            border : 1px solid black;
+            background-color: antiquewhite;
+            gap : 30px;
+        }
+        .box{
+            background-color: aquamarine;
+            width: 150px;
+        }
+        .con2{
+            width : 800px;
+            display : flex;
+            border : 1px solid black;
+            gap : 10px;
+        }
+        #b1{
+            flex-grow: 1;
+        }
+        #b2{
+            flex-grow: 1;
+        }
+        #b3{
+            flex-grow: 2;
+        }
+
+
+        .con3{
+            width : 100%;
+            display : flex;
+            border : 1px solid black;
+            gap : 10px;
+        }
+        .box{
+            flex-basis: 300px;
+        }
+        #b5{flex-shrink: 1;}
+        #b6{flex-shrink: 0;}
+        #b7{flex-shrink: 1;}
+        #b8{flex-shrink: 2;}
     </style>
 </head>
 <body>
+    <div class = "con3">
+        <div class = "box" id = "b5"><p>1</p></div>
+        <div class = "box" id = "b6"><p>2</p></div>
+        <div class = "box" id = "b7"><p>3</p></div>
+        <div class = "box" id = "b8"><p>4</p></div>
+    </div>
     
+    <div class = "con2">
+        <div class = "box" id = "b1"><p>1</p></div>
+        <div class = "box" id = "b2"><p>2</p></div>
+        <div class = "box" id = "b3"><p>3</p></div>
+        <div class = "box" id = "b4"><p>4</p></div>
+    </div>
+
+    <div class = "container">
+        <div class = "box"><p>Hello</p></div>
+        <div class = "box"><p>Hellooooooo ooooooooo oooooo</p></div>
+        <div class = "box"><p>Hellooooooo oooooooooo oooooooo ooooooo oooo ooooo</p></div>
+    </div>
 </body>
 </html>

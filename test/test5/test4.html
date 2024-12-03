@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test4</title>
+</head>
+<body>
+    <h1 class = "h1-1"></h1>
+
+    <hr> 
+    
+    <h1 class = "h1-2"></h1>
+    <h1 class = "h1-2"></h1>
+    <h1 class = "h1-2"></h1>
+    <h1 class = "h1-2"></h1>
+
+    <hr>
+
+    <div id="a"></div>
+    <div id="b"></div>
+
+    <hr>
+
+    <img class = "rect">
+    <img class = "rect">
+    <img class = "rect">
+    <img class = "rect">
+
+    <hr>
+
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+    <div class = "divs"></div>
+
+    <script>
+        const h1_1 = document.querySelector(".h1-1");
+        h1_1.textContent = "HEADERS"
+        h1_1.style.backgroundColor = "black";
+        h1_1.style.color = "white";
+
+        const h1_2s = document.querySelectorAll(".h1-2");
+        h1_2s.forEach(h1 => {
+            h1.textContent = "HEADERS"
+            h1.style.backgroundColor = "black";
+            h1.style.color = "white";
+        })
+
+        const a = document.querySelector("#a");
+        const b = document.querySelector("#b");
+        a.textContent = "<h1>textContent 속성</h1>";
+        b.innerHTML = "<h1>innerHTML 속성</h1>";
+
+        const imgs = document.querySelectorAll(".rect");
+        imgs.forEach((img,index)=>{
+            img.setAttribute("src",`https://placecats.com/${(index+1) * 100}/200`);
+        })
+
+        const divs = document.querySelectorAll(".divs");
+        divs.forEach((div, index) => {
+            div.style.width = "100%";
+            div.style.height = "10px";
+            div.style.backgroundColor = `rgb(${(index+1)*10},${(index+1)*10},${(index+1)*10})`
+        })
+
+    </script>
+</body>
+</html>
