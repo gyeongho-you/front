@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "clickPrint">클릭 횟수 : 0</h1>
+    <button class ="connect">이벤트 연결</button>
+    <button class ="disconnect">이벤트 제거</button>
+    <p class = "connectPrint">이벤트 연결 상태 : 해제</p>
+    <script>
+        const clickPrint = document.querySelector(".clickPrint");
+        const connect = document.querySelector(".connect");
+        const disConnect = document.querySelector(".disconnect");
+        const connectPrint = document.querySelector(".connectPrint");
+        let num = 0;
+
+        // 기본 해제
+        let isConnect = false;
+
+        const clickPrintFn = () => {
+            clickPrint.textContent = `클릭 횟수 : ${++num}`
+        }
+
+        connect.addEventListener("click",() => {
+            if(!isConnect){
+                clickPrint.addEventListener("click",clickPrintFn);
+                connectPrint.textContent = "이벤트 연결 상태 : 연결"
+                isConnect = true;
+            }
+        })
+
+        disConnect.addEventListener("click",() => {
+            if(isConnect){
+                clickPrint.removeEventListener("click",clickPrintFn);
+                connectPrint.textContent = "이벤트 연결 상태 : 해제"
+                isConnect = false;
+            }
+        })
+
+    </script>
+</body>
+</html>

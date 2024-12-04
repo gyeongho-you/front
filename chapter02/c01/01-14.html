@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text">cm = 
+    <span></span>
+    <select>
+        <option value = "10">mm</option>
+        <option value = "0.01">m</option>
+        <option value = "0.393701">inch</option>
+    </select>
+    <script>
+        const input = document.querySelector("input");
+        const span = document.querySelector("span");
+        const select = document.querySelector("select");
+        let trans = 10;
+        let cur
+
+        const cal = () => {
+            //계산하여 소수점 2번째 까지 출력
+            span.textContent = (cur*trans).toFixed(2);
+        }
+
+        select.addEventListener("change", (event) => {
+            const options = event.currentTarget.options;
+            const index = options.selectedIndex
+
+            trans = Number(options[index].value);
+            cal();            
+        })
+
+        input.addEventListener("keyup", (event) => {
+            cur = Number(event.currentTarget.value);
+            cal();
+        })
+    </script>
+</body>
+</html>

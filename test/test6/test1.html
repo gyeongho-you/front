@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class = "first">
+        <h1>첫 번째 div 태그 내부</h1>
+    </div>
+    <hr>
+    <div class = "second">
+        <h1>두 번째 div 태그 내부</h1>
+    </div>
+    <script>
+        const first = document.querySelector(".first");
+        const second = document.querySelector(".second");
+        const h1 = document.createElement("h1");
+        h1.textContent = "이동하는 h1 태그"
+        
+        //1번째면 true, 아니면 false
+        let point = true;
+
+        //first div 초기배치
+        first.appendChild(h1);
+        
+        h1.addEventListener("click",()=>{
+            if(point){
+                second.appendChild(h1);
+                point = false;
+            }else{
+                first.appendChild(h1);
+                point = true;
+            }
+        })
+
+    </script>
+</body>
+</html>

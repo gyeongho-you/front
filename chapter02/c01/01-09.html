@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input typpe = "text">
+    <h1></h1>
+    <script>
+        const input = document.querySelector("input")
+        const h1 = document.querySelector("h1")
+
+        const listener = function(event){
+            h1.textContent = this.value;
+        }
+
+        input.addEventListener("keydown",listener);
+
+        // input.addEventListener("keydown",(event) => {
+        //     h1.textContent = event.currentTarget.value;
+        // })
+
+        // input.addEventListener("keydown",(event) => {
+        //     h1.textContent = input.value;
+        // })
+    </script>   
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class = "star">★</h1>
+    <script>
+        const star = document.querySelector(".star");
+        star.style.position = "absolute";
+        const [up, right, down, left] = [38,39,40,37];
+        let [x,y] = [0,0];
+
+        const move = () => {                    
+            star.style.top = `${y}px`
+            star.style.left = `${x}px`
+        }
+
+        move();
+
+        document.body.addEventListener("keydown", (event) => {
+            switch(event.keyCode){
+                case up:
+                    if(y >= -20){
+                        y -= 10;
+                    }
+                    break;
+                case down:
+                    y += 10;
+                    break;
+                case left:
+                    if(x >= 10){
+                        x -= 10;
+                    }
+                    break;
+                case right:
+                    x += 10;
+                    break;
+            }
+            move();
+        })
+
+    </script>
+</body>
+</html>
