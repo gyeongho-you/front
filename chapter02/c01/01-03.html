@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id = "first">
+        <h1>첫 번째 div 태그 내부</h1>
+    </div>
+    <div id = "second">
+        <h1>두 번째 div 태그 내부</h1>
+    </div>
+
+    <hr>
+    <h1 class = "remove-h1">제거 대상 문서 객체</h1>
+    <hr>
+
+    <script>
+        const removeH1 = document.querySelector(".remove-h1");
+        
+
+        setTimeout(()=>{
+            removeH1.parentNode.removeChild(removeH1);
+        },1000)
+
+        const divA = document.querySelector("#first");
+        const divB = document.querySelector("#second");
+
+        const h1 = document.createElement("h1");
+        h1.textContent="이동하는 h1 태그";
+
+        const toFirst = () =>{
+            divA.appendChild(h1);
+            setTimeout(toSecond,2000);
+        }
+
+        const toSecond = () =>{
+            divB.appendChild(h1);
+            //setTimeout(toFirst,2000);
+        }
+        toFirst();
+
+
+        const header = document.createElement("h1");
+
+        header.textContent = "문서 객체 생성하기";
+        header.style.color="white";
+        header.style.backgroundColor = "#4fb7f7";
+
+        document.body.appendChild(header);
+    </script>
+</body>
+</html>

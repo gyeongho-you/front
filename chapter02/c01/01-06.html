@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        const h1 = document.querySelector("h1");
+
+        const print = (event) => {
+            let output = "";
+            output += `alt:${event.altKey}<br>`;
+            output += `ctrl:${event.ctrlKey}<br>`;
+            output += `shift:${event.shiftKey}<br>`;
+            output += `code:${event.code}<br>`;
+            output += `keyCode:${event.keyCode}<br>`;
+            h1.innerHTML = output;
+        }
+
+        document.addEventListener("keydown",print);
+    </script>
+</body>
+</html>
