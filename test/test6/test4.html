@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 10px 30px;
+        }
+        select{
+            width: 218px;
+            height: 40px;
+            border : 0px;
+            font-size : 15px;
+        }
+        h1{
+            margin: 20px;
+            line-height: 20px;
+        }
+        input{
+            border : 0px;
+            height: 50px;
+            width: 210px;
+            font-size : 20px;
+            text-align: center;
+        }
+        .result{
+            font-size : 20px;
+            text-align: center;
+            line-height: 12px;
+        }
+        .box{
+            margin: 0 auto;
+            padding: 10px;
+            border: 1px solid rgb(213,213,213);
+            width: 650px;
+            height: 270px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+        .middle{
+            display: flex;
+        }
+        .type{
+            border : 1px solid rgb(213,213,213);
+            width : 508px;
+            height: 40px;
+        }
+        table, tr, td{
+            border : 1px solid rgb(213,213,213);
+            border-collapse: collapse;
+    
+            width: 220px;
+        }
+        .sub{
+            font-size: small;
+            background-color: rgb(252,224,155);
+        }
+    </style>
+</head>
+<body>
+    <div class = "box">
+        
+        <div class = "top">
+            <select class = "type">
+                <option>데이터 크기</option>
+            </select>
+        </div>
+        
+        <div class = "middle">
+            <table>
+                <tr><td><input type = "text"></td></tr>
+                <tr>
+                    <td>
+                        <select class = "inputChoice">
+                            <option value="8388608">비트</option>
+                            <option value="1048576">바이트</option>
+                            <option value="1024">킬로바이트</option>
+                            <option value="1">메가바이트</option>
+                            <option value="0.000977">기가바이트</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+            
+            <h1>=</h1>
+            
+            <table>
+                <tr><td><p class = "result">0</p></td></tr>
+                <tr>
+                    <td>
+                        <select class = "outputChoice">
+                            <option value="8388608">비트</option>
+                            <option value="1048576">바이트</option>
+                            <option value="1024">킬로바이트</option>
+                            <option value="1">메가바이트</option>
+                            <option value="0.000977">기가바이트</option>
+                        </select>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+
+        <div class ="bottom">
+            
+            <p><span class = "sub">공식</span> 근사값 결과를 얻으려면 데이터 크기 값을 <span class = "ex">1</span>(으)로 나눕니다.</p>
+        </div>
+
+    </div>
+
+    <script>
+        const type = document.querySelector(".type");
+        const input = document.querySelector("input");
+        const inputChoice = document.querySelector(".inputChoice");
+        const outputChoice = document.querySelector(".outputChoice");
+        const result = document.querySelector(".result");
+        const ex = document.querySelector(".ex");
+
+        let inputType = 8388608;
+        let outputType = 8388608;
+        let cur
+
+
+        const cal = () => {
+            //계산하여 소수점 2번째 까지 출력
+            result.textContent = ((cur*outputType)/inputType).toFixed(6);
+        }
+
+        inputChoice.addEventListener("change", (event) => {
+            const options = event.currentTarget.options;
+            const index = options.selectedIndex
+
+            inputType = Number(options[index].value);
+            ex.textContent = outputType/inputType;
+            cal();            
+        })
+
+        outputChoice.addEventListener("change", (event) => {
+            const options = event.currentTarget.options;
+            const index = options.selectedIndex
+
+            outputType = Number(options[index].value);
+            ex.textContent = outputType/inputType;
+            cal();         
+        })
+
+        input.addEventListener("keyup", (event) => {
+            cur = Number(event.currentTarget.value);
+            cal();
+        })
+    </script>
+</body>
+</html>
