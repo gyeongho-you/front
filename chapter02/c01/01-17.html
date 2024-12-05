@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src = "https://placecats.com/neo_banana/300/200">
+    <script>
+        //기본 이벤트 막기
+        const imgs = document.querySelectorAll("img");
+        imgs.forEach((img) => {
+            img.addEventListener("contextmenu", (event) => {
+                //기본 이벤트 제거
+                event.preventDefault();
+            })
+        })
+    </script>
+</body>
+</html>
