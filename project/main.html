@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>디퓨저</title>
+    <link rel="stylesheet" href="css/main_style.css">
+</head>
+<body>
+    <div id = "main_size">
+        <!-- 머리부분 (메인 이미지) -->
+        <div id = "top">
+            <div id = "headline">
+                <h1 id = "mainTitle"><a href="main.html">디퓨저</a></h1>
+                <div id = "menu">
+                    <ul>
+                        <li><a href="companyEx.html"  id ="com_ex">회사 소개</a></li>
+                        <li><a href="productlist.html"  id ="buy_pr">상품 구매</a></li>
+                        <li><a href="q&a.html"  id ="q_a">Q & A</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id = "head_radios">
+                <input type="radio" name ="head_img" value="1" checked>
+                <input type="radio" name ="head_img" value="2">
+                <input type="radio" name ="head_img" value="3">
+            </div>
+        </div>
+        <!-- 소식, 설명하고 싶은 것 나열 -->
+        <div id = "middle">
+            <h1>중간 설명</h1>  
+            <div id = "middle_img">
+                <div class = "img_box">
+                    <img src="images/flower_bg.jpg" class = "img">
+                    <h3>친환경</h3>
+                </div>
+                <div class = "img_box">
+                    <img src="images/watch_bg.jpg" class = "img">
+                    <h3>노하우</h3>
+                </div>
+                <div class = "img_box">
+                    <img src="images/letter_bg.jpg" class = "img">
+                    <h3>새소식</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- 상품 나열 -->
+        <div id = "bottom">
+            <h1>인기 상품</h1>
+            <ul id = "product_ul">
+                <li>
+                    <img src="images/product_1.PNG" class = "pd">
+                    <h3>디퓨저1</h3>
+                </li>
+                <li>
+                    <img src="images/product_2.PNG" class = "pd">
+                    <h3>디퓨저2</h3>
+                </li>
+                <li>
+                    <img src="images/product_3.PNG" class = "pd">
+                    <h3>디퓨저3</h3>
+                </li>
+                <li>
+                    <img src="images/product_4.PNG" class = "pd">
+                    <h3>디퓨저4</h3>
+                </li>
+            </ul>
+        </div>
+
+        <footer id = "footer">
+            <div id = "foot_one">
+                <h4>디퓨저</h4>
+                <p>(주)디퓨저 | 대표자: 유경호 | 사업자번호: 000-00-00000 <br>
+                    개인정보보호책임자: 유경호 | 이메일: example@ex.com <br>
+                    전화번호: 070-1234-5678 | 주소: 부산 서면
+                </p>
+            </div>
+            <div id = "foot_two">
+                <h5>고객 센터</h5>
+                <p>070-6543-2109</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="javascript/main.js"></script>
+    <script src="javascript/top_menu.js"></script>
+</body>
+</html>
