@@ -28,7 +28,7 @@ const change_menu_out_bg = (num)=>{
         case 2:
             buy.style.textDecoration = "none"
             buy.style.fontWeight = "normal"
-            break;
+            break;  
         case 3:
             question_view.style.textDecoration = "none"
             question_view.style.fontWeight = "normal"

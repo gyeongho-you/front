@@ -13,7 +13,6 @@ a{
 li{
     margin: 30px;
 }
-
 #main_size{
     margin: 0 auto;
     width: 1500px;
@@ -40,63 +39,51 @@ li{
 }
 
 #middle{
-    width: 1500px;
-    margin: 200px 10px;
-    height: 1000px;
-    display: flex;
-    flex-direction: row;
-    justify-items: center;
-}
-#middle img{
-    margin: 50px;
-    width: 500px;
-    height: 600px;
-    border: 1px solid black;
-}
-#middle div{
-    margin: 50px;
-    width: 500px;
-    height: 500px;
-    background-color: white;
-}
-#middle ul{
-    height: 220px;
-    overflow-y: scroll;
+    width: 1480px;
+    margin: 200px 10px 0px 10px;
     display: flex;
     flex-direction: column;
+    justify-items: center;
 }
-tr, td{
-    width: 500px;
-    height: 50px;
-    border-bottom: 1px dotted gray;
+#middle_img{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
 }
+
+#send_question div{
+    display: flex;
+    margin: 10px;
+}
+.send_question_title{
+    width: 300px;
+}
+.send_text textarea{
+    width: 700px;
+    height: 500px;
+    resize: none;
+}
+#send_button{
+    text-align: right;
+}
+button{
+    appearance: none;
+    background-color: rgb(160, 160, 160);
+    border-radius: 10px;
+    width: 100px;
+    height: 30px;
+    margin: 20px 60px 0px 0px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}   
 footer{
     background-color:rgba(236,225,207,0.2);
     height: 200px;
     display: flex;
     gap : 40px;
 }
-#buy{
-    margin-top: 50px;
-    width: 500px;
-    height: 100px;
-    background-color: white;
-}
 footer div{
     width: 600px;
     padding: 50px;
     line-height: 30px;
-}
-#buy_list{
-    padding: 0px;
-    gap : 10px;
-}
-#buy_list div{
-    margin : 0px;
-    display : flex;
-    flex-direction : row;
-    height : 30px;
-    padding : 30px;
-    border-bottom : 1px dotted black;
-    width : 400px;
 }

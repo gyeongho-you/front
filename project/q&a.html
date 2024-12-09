@@ -26,13 +26,13 @@
         <div id = "middle">
             <h1>자주 하시는 질문</h1>
             <hr>
-            <table id ="question_table">
+            <table class ="question_table">
                 <colgroup>
-                    <col id ="col1">
-                    <col id ="col2">
-                    <col id ="col3">
+                    <col class ="col1">
+                    <col class ="col2">
+                    <col class ="col3">
                 </colgroup>
-                <tr id = "table_title">
+                <tr class = "table_title">
                     <th>번호</th>
                     <th>제목</th>
                     <th>조회수</th>
@@ -49,30 +49,47 @@
                 </tr>
                 <tr>
                     <td>3</td>
-                    <td>배송 전 취소하고싶어요</td>
+                    <td>배송 전 취소하고싶어요.</td>
                     <td>9</td>
                 </tr>
                 <tr>
                     <td>4</td>
-                    <td>교환/반품 신청은 어떻게 하나요</td>
+                    <td>교환/반품 신청은 어떻게 하나요?</td>
                     <td>6</td>
                 </tr>
                 <tr>
                     <td>5</td>
-                    <td>교환/반품 시 배송비는 어떻게 되나요</td>
+                    <td>교환/반품 시 배송비는 어떻게 되나요?</td>
                     <td>10</td>
                 </tr>
                 <tr>
                     <td>6</td>
-                    <td>무통장 결제로 입금했는데 확인되지 않아요</td>
+                    <td>무통장 결제로 입금했는데 확인되지 않아요.</td>
                     <td>8</td>
+                </tr>
+            </table>
+
+            <hr>
+            <hr>
+
+            <h1>내 질문 내역</h1>
+            <table id = "my_question" class = "question_table">
+                <colgroup>
+                    <col class ="col1">
+                    <col class ="col2">
+                    <col class ="col3">
+                </colgroup>
+                <tr class = "table_title">
+                    <th>번호</th>
+                    <th>제목</th>
+                    <th>조회수</th>
                 </tr>
             </table>
         </div>
 
         <!-- 질문작성 -->
         <div id = "bottom">
-            <button type = "button">질문 하기</button>
+            <a href="question.html"><button type = "button">질문 하기</button></a>
         </div>
 
         <footer id = "footer">
@@ -92,5 +109,6 @@
     </div>
 
     <script src="javascript/top_menu.js"></script>
+    <script src="javascript/q&a.js"></script>
 </body>
 </html>

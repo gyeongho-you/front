@@ -50,7 +50,7 @@ li{
     flex-direction: row;
     gap: 20px;
 }
-#question_table{
+.question_table{
     margin: 10px 50px;
     text-align: center;
 }
@@ -59,16 +59,16 @@ td{
     border-bottom : 1px dotted black;
     height: 50px;
 }
-#col1{
+.col1{
     width: 100px;
 }
-#col3{
+.col3{
     width: 100px;
 }
-#table_title{
+.table_title{
     background-color: rgba(238, 238, 238, 0.76);
 }
-#table_title th{
+.table_title th{
     border-bottom : 1px solid rgb(184, 184, 184);
     height: 50px;
 }

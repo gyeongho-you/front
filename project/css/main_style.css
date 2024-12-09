@@ -19,6 +19,7 @@ li{
     display: flex;
     flex-direction: column;
     background-color: rgba(236,225,207,0.3);
+    overflow: hidden;   
 }
 #mainTitle{
     position: relative;
@@ -53,8 +54,8 @@ li{
 
 #middle{
     width: 1500px;
-    margin: 30px 10px;
-    height: 1000px;
+    margin: 150px 10px 30px 10px;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -79,6 +80,9 @@ li{
     border-right: 1px solid rgba(213,213,213,0.4);
     
 }
+.img_box h3, .img_box p{
+    text-align: center;
+}
 input[type='radio']{
     appearance: none;
     width: 15px;
@@ -90,13 +94,31 @@ input[type='radio']{
 input[type='radio']:checked{
     background-color: rgba(213,213,213);
 }
+
+#popularity{
+    margin-top: 200px;
+}
+
+@keyframes mymove {
+    0% { right: 0px; }   /* 시작 위치 (화면 밖) */
+    25% { right: 500px;}
+    50% { right: 1000px; }     /* 중간 위치 (화면 안) */
+    75% { right: 1500px; }
+    100% { right: 2040px; } /* 끝 위치 (화면 밖) */
+}
+#bottom{
+    position: relative;
+    animation: mymove 10s infinite;
+    
+}
+
 #product_ul{
-    display: inline;
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    animation-timing-function: linear;
 }
-#product_ul li{
-    float: left;
-}
+
 footer{
     background-color:rgba(236,225,207,0.2);
     height: 200px;
