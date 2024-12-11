@@ -1,0 +1,22 @@
+canvas{
+    background: url("../images/event_bg.PNG");
+}
+body{
+    display: flex;
+    flex-direction: row;
+}
+div{
+    margin: 20px;
+    width: 400px;
+}
+#life_h1{
+    color: red;
+}
+ul{
+    list-style-type: decimal;
+}
+li{
+    margin: 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
