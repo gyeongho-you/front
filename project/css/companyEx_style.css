@@ -41,7 +41,7 @@ li{
 #middle{
     width: 1500px;
     margin-top:  200px;
-    height: 1000px;
+    height: 800px;
 }
 #middle h1{
     color: black;
@@ -66,4 +66,10 @@ footer div{
     width: 600px;
     padding: 50px;
     line-height: 30px;
+}
+iframe{
+    margin: 20px 0px 40px 400px;
+}
+#bottom h1{
+    margin: 20px 0px 30px 400px;
 }
